@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laziz</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: #222831;
+        color: white;
+      }
+      .heroPageMainWord {
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 45vh;
+        animation: disapear 7s;
+      }
+      @keyframes disapear {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0.8;
+        }
+        98% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+          display: none;
+        }
+      }
+
+      .myWorkNone {
+        display: none;
+      }
+      .myWork {
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 45vh;
+        animation: disapear2 5s;
+      }
+      @keyframes disapear2 {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0.8;
+        }
+        98% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+          display: none;
+        }
+      }
+
+      .container {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #222831;
+        animation: disapear3 2s;
+        .leftSideBar {
+          width: 19%;
+          height: 97.3%;
+          position: absolute;
+          top: 1.7%;
+          left: 1%;
+          background-color: #393e46;
+          border-radius: 10px;
+        }
+        .midleBar {
+          width: 58%;
+          height: 97.3%;
+          position: absolute;
+          top: 1.7%;
+          left: 21%;
+          background-color: #393e46;
+          border-radius: 10px;
+          .tableCon {
+            width: 90%;
+            height: 80%;
+            margin-top: 2%;
+            margin-left: 5%;
+            text-align: center;
+            border-radius: 15px;
+            background-color: #393e46;
+            overflow: auto;
+            table {
+              width: 100%;
+              height: 100%; /* 
+              border: 1px solid black; */
+              border-radius: 15px;
+              tr {
+                border-radius: 15px;
+                td {
+                  color: white;
+                  background-color: #0f4c75;
+                }
+              }
+            }
+          }
+          .promptCon {
+            width: 90%;
+            text-align: center;
+            position: relative;
+            top: 5%;
+            left: 5%;
+            display: flex;
+            #promptInp {
+              flex: 5;
+              /* 
+              width: 70%; */
+              height: 20px;
+              border: 1px solid #222831;
+              background-color: white;
+              border-radius: 20px;
+              margin-left: 20px;
+              margin-right: 10px;
+              margin-top: 5px;
+              padding: 10px; /* 
+              display: inline-block; */
+            }
+            #promptBut {
+              flex: 1;
+              font-size: 2rem;
+              height: 50px;
+              border-radius: 25px;
+              margin-left: 10px;
+              margin-right: 20px;
+              border: 0;
+              background-color: #00adb5;
+              color: aliceblue;
+            }
+          }
+        }
+        .rightSideBar {
+          width: 19%;
+          height: 97.3%;
+          position: absolute;
+          top: 1.7%;
+          left: 80%;
+          background-color: #393e46;
+          border-radius: 10px;
+        }
+      }
+      @keyframes disapear3 {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heroPageMainWord">
+      You are welcome to Quantitative methods calculator
+    </h1>
+
+    <h1 class="myWorkNone">Made by Lazizbek</h1>
+
+    <div class="container">
+      <div class="leftSideBar">:</div>
+      <!-- settings -->
+
+      <div class="midleBar">
+        <!-- Current chat -->
+        <div class="tableCon">
+          <table>
+            <tr>
+              <td>1</td>
+              <td>ism</td>
+              <td>number</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ism</td>
+              <td>number</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ism</td>
+              <td>number</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ism</td>
+              <td>number</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ism</td>
+              <td>number</td>
+            </tr>
+          </table>
+        </div>
+        <div class="promptCon">
+          <div id="promptInp"></div>
+          <button
+            id="promptBut"
+            onclick="console.log(console);
+          "
+          >
+            >
+          </button>
+        </div>
+      </div>
+
+      <div class="rightSideBar">!<!-- histry --></div>
+    </div>
+
+    <script>
+      setTimeout(() => {
+        document.querySelector(".heroPageMainWord").remove();
+      }, 6900);
+
+      setTimeout(() => {
+        document.querySelector(".myWorkNone").classList.add("myWork");
+        document.querySelector(".myWorkNone").style.display = "block";
+      }, 7500);
+      setTimeout(() => {
+        document.querySelector(".myWorkNone").classList.remove("myWork");
+        document.querySelector(".myWorkNone").style.display = "none";
+      }, 12400);
+      setTimeout(() => {
+        document.querySelector(".container").style.display = "block";
+      }, 12500);
+    </script>
+  </body>
+</html>
